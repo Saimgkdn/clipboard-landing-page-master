@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+}
+
+p {
+  color: hsl(202, 11%, 66%);
+  line-height: 1.4;
+}
+
+.section-hero {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+
+.logo {
+  margin-bottom: 50px;
+}
+
+.hero-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 44px;
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero-header p {
+  margin-bottom: 50px;
+  max-width: 700px;
+  line-height: 1.4;
+}
+
+.btns a {
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.btn1 {
+  background-color: hsl(171, 66%, 44%);
+  margin-right: 5px;
+  box-shadow: 0 5px 10px 2px hsla(171, 66%, 44%, 0.651);
+}
+
+.btn1:hover,
+.btn1:active {
+  opacity: 0.8;
+  box-shadow: none;
+}
+
+.btn2 {
+  background-color: hsl(233, 100%, 69%);
+  margin-left: 5px;
+  box-shadow: 0 5px 20px 2px hsl(233, 100%, 69%);
+}
+
+.btn2:hover,
+.btn2:active {
+  opacity: 0.8;
+  box-shadow: none;
+}
+
+.section-install {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: 600;
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 20px;
+}
+
+.section-install p {
+  margin-bottom: 80px;
+  max-width: 700px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.desktop-container {
+  display: flex;
+  gap: 100px;
+  margin-bottom: 150px;
+}
+
+.desktop-container img {
+  transform: translate(-30px);
+}
+
+h3 {
+  color: hsl(212, 10%, 33%);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.d-text {
+  margin-bottom: 50px;
+}
+
+.d-text p {
+  max-width: 400px;
+  line-height: 1.6;
+}
+
+.tablet-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tablet-container img {
+  margin: 100px 0;
+}
+
+.t-text {
+  max-width: 700px;
+}
+
+.section-info {
+  text-align: center;
+}
+
+.info-header {
+  margin-bottom: 120px;
+}
+
+.info-block {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 150px;
+}
+
+.block img {
+  margin-bottom: 35px;
+}
+
+.block {
+  max-width: 400px;
+}
+
+.t-imgs {
+  display: flex;
+  justify-content: space-around;
+  padding: 180px 80px;
+}
+
+.t-imgs img {
+  height: 35px;
+}
+
+.download {
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+footer {
+  display: flex;
+  gap: 150px;
+}
+
+.footer {
+  background-color: hsla(212, 10%, 33%, 0.075);
+  display: flex;
+  padding: 50px 150px;
+}
+
+.logo-img {
+  width: 60px;
+  height: 60px;
+}
+
+.list {
+  display: flex;
+  gap: 80px;
+  margin-right: 150px;
+  line-height: 2;
+}
+
+.list li {
+  list-style: none;
+  color: hsl(203, 7%, 53%);
+  font-weight: 400;
+}
+
+.logos img {
+  width: 24px;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .desktop-container {
+    flex-direction: column;
+    gap: 100px;
+    margin-bottom: 100px;
+  }
+
+  .section-hero {
+    margin: 0 16px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .btns {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+  }
+
+  .section-install {
+    margin: 0 16px;
+    text-align: center;
+  }
+
+  .desktop-container img {
+    transform: translate(0);
+    margin: 0 16px;
+  }
+
+  .d-flex {
+    text-align: center;
+    align-items: center;
+  }
+
+  .tablet-container img {
+    width: 100%;
+  }
+
+  .t-imgs {
+    flex-direction: column;
+    align-items: center;
+    padding: 130px 60px;
+    gap: 50px;
+  }
+
+  .download {
+    margin: 0 16px 150px 16px;
+  }
+
+  .info-header {
+    margin-bottom: 80px;
+  }
+
+  .info-block {
+    flex-direction: column;
+    gap: 50px;
+    padding: 0;
+    margin: 0 16px;
+    align-items: center;
+  }
+
+  .testimonial img {
+    width: 40%;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 80px;
+  }
+
+  .list {
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+    gap: 0;
+    line-height: 2.5;
+  }
+}
